@@ -18,7 +18,7 @@ public class Database {
 	private void init() {
 		String sqls[] = {
 				"DROP TABLE movies IF EXISTS",
-				"CREATE TABLE movies(id serial, movie_year integer, movie_title varchar(231), movie_studios varchar(231), movie_producers varchar(231), winner boolean, PRIMARY KEY (id))"
+				"CREATE TABLE movies(id bigint auto_increment, movie_year integer, movie_title varchar(231), movie_studios varchar(231), movie_producers varchar(231), winner boolean, PRIMARY KEY (id))"
 		};
 
 		Arrays.asList(sqls).forEach(sql -> {
