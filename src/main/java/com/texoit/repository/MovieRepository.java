@@ -10,8 +10,5 @@ import com.texoit.model.Movie;
 @Repository
 public interface MovieRepository extends CrudRepository<Movie, String>{
 
-	@Override
-    List<Movie> findAll();
-
     List<Movie> findAllByWinner(boolean winner);
 }

@@ -56,17 +56,6 @@ public class MoviesService {
 			}
 		}
 
-		for (String key : moviesProducer.keySet()) {
-			System.out.println("*****");
-			System.out.println("key:"+key);
-			System.out.println("size:"+moviesProducer.get(key).size());
-
-			for (Movie movie : moviesProducer.get(key)) {
-				System.out.println(movie.getTitle());
-				System.out.println(movie.getYear());
-			}
-		}
-
 		//lógica para calcular os intervalos minimos e maximos entre premiações
 		Map<String, List<Movie>> minInterval = new HashMap<>();
 		Map<String, List<Movie>> maxInterval = new HashMap<>();
